@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Pacifico&family=Poppins:wght@100&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+/* HEADER */
+.header
+{
+    position: static;
+}
+.navigation {
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.logo {
+  margin-left: 20px;
+  padding: 1rem;
+  font-family: "Pacifico";
+}
+.search {
+  /* float: right; */
+  /* padding: 6px; */
+  border: none;
+  padding: 0.5rem;
+  font-size: 17px;
+  outline: none;
+  border: 1px solid rgb(138, 166, 224);
+  border-radius: 10px;
+}
+.navbar li {
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 40px;
+}
+.navbar {
+  font-weight: bold;
+  /* flex:1; */
+  text-align: right;
+  padding: 1rem;
+}
+
+/* CAROUSEL */
+
+.carousel {
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+}
+
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+  display: none;
+}
+
+.carousel .carousel-item img {
+  width: 100%;
+  /* max-width: 1000px; */
+  height: auto;
+}
+
+.carousel .carousel-item-visible {
+  display: block;
+  animation: fadeVisibility 1s;
+}
+
+.carousel .actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel .actions button {
+  border-radius: 50px;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  outline: none;
+}
+.carousel .actions button:hover {
+  background-color: bisque;
+}
+.actions .previous {
+  margin-left: 20px;
+}
+
+.actions .next {
+  margin-right: 20px;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: opacity radial;
+  }
+
+}
+
+/* INTRODUCTION */
+
+.introduction p {
+  font-family: "Lobster", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(230, 176, 106);
+  margin: 40px 0;
+}
+
+/* Categories */
+
+.categories {
+  font-family: "Poppins";
+  margin-top: 90px;
+  margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  width: 800px;
+}
+.category-images {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 800px;
+}
+.category-images img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+.category-images .images {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight:bold;
+}
+
+
+/* FEATURED PRODUCTS */
+
+.featured
+{
+    display: flex;
+    flex-basis: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    /* justify-content: center; */
+}   
+.product-img img
+{
+    height: 350px;
+    width: 280px;
+}
+.men
+{
+    /* background-color: rgb(70, 70, 146); */
+    /* text-align: center; */
+    font-family: 'Montserrat';
+    width: 700px;
+    /* color: aliceblue; */
+    /* justify-content: space-between; */
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 1rem; */
+    border-radius: 10px;
+}
+.description
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.products
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.women
+{
+    /* color: blanchedalmond; */
+    font-family: 'Montserrat';
+    /* text-align: center; */
+    width: 700px;
+    /* background-color: palevioletred; */
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
