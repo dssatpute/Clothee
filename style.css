@@ -1,21 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Pacifico&family=Poppins:wght@100&display=swap");
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
   margin: 0%;
   padding: 0%;
 }
 /* HEADER */
-.header
-{
-    position: static;
+.header {
+  position: static;
 }
 .navigation {
   font-family: "Poppins";
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 .logo {
   margin-left: 20px;
@@ -106,7 +106,6 @@
     opacity: 1;
     transform: opacity radial;
   }
-
 }
 
 /* INTRODUCTION */
@@ -150,59 +149,106 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-weight:bold;
+  font-weight: bold;
 }
-
 
 /* FEATURED PRODUCTS */
 
-.featured
-{
-    display: flex;
-    flex-basis: 100%;
-    max-width: 100%;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    /* justify-content: center; */
-}   
-.product-img img
-{
-    height: 350px;
-    width: 280px;
+.featured {
+  display: flex;
+  flex-basis: 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
 }
-.men
-{
-    /* background-color: rgb(70, 70, 146); */
-    /* text-align: center; */
-    font-family: 'Montserrat';
-    width: 700px;
-    /* color: aliceblue; */
-    /* justify-content: space-between; */
-    margin-left: auto;
-    margin-right: auto;
-    /* padding: 1rem; */
-    border-radius: 10px;
+.product-img img {
+  height: 350px;
+  width: 280px;
 }
-.description
-{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.men {
+  font-family: "Montserrat";
+  width: 700px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 10px;
 }
-.products
-{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.description {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.women
-{
-    /* color: blanchedalmond; */
-    font-family: 'Montserrat';
-    /* text-align: center; */
-    width: 700px;
-    /* background-color: palevioletred; */
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.women {
+  font-family: "Montserrat";
+
+  width: 700px;
+
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* DEALS */
+.Deals {
+  margin-top: 50px;
+  font-family: "Montserrat";
+}
+.deal-img {
+  height: 290px;
+  width: 100%;
+  transition: transform 0.2s;
+}
+.deal-img:hover {
+  transform: scale(
+    0.9
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.carousel-deal {
+  display: flex;
+  max-width: 1200px;
+  height: 500px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+.deal {
+  /* max-height: 250px; */
+  /* max-width: 300px; */
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  width: 280px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.deal:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.deal .price {
+  /* display: flex;
+  flex-direction: column; */
+  padding: 1rem;
+  line-height: 25px;
+}
+.buy-deal {
+  background-color: blueviolet;
+  width: fit-content;
+  padding: 0.2rem 1rem;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.5s;
+  color: antiquewhite;
+}
+.buy-deal:hover {
+  transform: scale(1.1);
 }
