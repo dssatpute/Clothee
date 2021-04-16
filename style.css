@@ -211,6 +211,7 @@ html {
   ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .carousel-deal {
+  border-radius: 10px;
   display: flex;
   max-width: 1200px;
   height: 500px;
@@ -219,10 +220,9 @@ html {
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
+  background-color: bisque;
 }
 .deal {
-  /* max-height: 250px; */
-  /* max-width: 300px; */
   display: flex;
   flex-direction: column;
   height: 420px;
@@ -234,8 +234,7 @@ html {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .deal .price {
-  /* display: flex;
-  flex-direction: column; */
+  
   padding: 1rem;
   line-height: 25px;
 }
