@@ -7,10 +7,47 @@ html {
   margin: 0%;
   padding: 0%;
 }
-/* HEADER */
-.header {
-  position: static;
+
+
+.float
+{
+  
+    position: fixed;
+    bottom: 130px;
+    width: 44px;
+    height: 288px;
+    background-color: #535766;
+    z-index: 6;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+  
 }
+.float h3
+{
+    margin-top: 45px;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    width: 36px;
+    padding: 4px;
+    height: 200px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500; 
+    color: #fcfcfc;
+    display: inline-block;
+    font-family: 'Poppins',cursive;
+}
+/* HEADER  */
+ .header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: antiquewhite;
+  width: 100%; 
+  height: 80px;
+ }
 .navigation {
   font-family: "Poppins";
   display: flex;
@@ -37,6 +74,10 @@ html {
   list-style-type: none;
   display: inline-block;
   margin-right: 40px;
+  
+}
+.navbar a{
+  text-decoration: none;
 }
 .navbar {
   font-weight: bold;
@@ -48,6 +89,8 @@ html {
 /* CAROUSEL */
 
 .carousel {
+  /* position: fixed; */
+  position: relative;
   overflow: hidden;
   max-width: 100%;
   position: relative;
@@ -246,6 +289,10 @@ html {
   border-radius: 10px;
   border: none;
   transition: transform 0.5s;
+  
+}
+.buy-deal a{
+  text-decoration: none;
   color: antiquewhite;
 }
 .buy-deal:hover {
