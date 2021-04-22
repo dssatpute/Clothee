@@ -1,0 +1,53 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Grey Tshirt",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./sub_images/product-6.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Red Tshirt",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./sub_images/gallery-1.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Red Shoes",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./sub_images/category-1.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "White Shoes",
+        "price": 22.99,
+        "image": { "fields": { "file": { "url": "./sub_images/category-2.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Adidas Sweatshirt",
+        "price": 88.99,
+        "image": { "fields": { "file": { "url": "./sub_images/category-3.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "MI Band",
+        "price": 32.99,
+        "image": { "fields": { "file": { "url": "./sub_images/exclusive.png" } } }
+      }
+    }
+    
+  ]
+}
